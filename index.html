@@ -1,31 +1,25 @@
 ﻿<!DOCTYPE html>
-<html>
-<body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Web3 Betting App </title>
+    <link rel="stylesheet" href="main.css">
+</head>
 
-    <h3>Coinflip</h3>
+<h3 class="large_text"> Coinflip</h3>
+
+<body class="light-theme centre regular_text">
     <p>This requires the Chrome MetaMask extension.</p>
-
-    <table>
-        <tr>
-            <td>
-                <input id="betAmt" value="Bet Amount (ETH)">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input id="walletAddress" value="Wallet Address">
-            </td>
-        </tr>
-    </table>
-
-    <input id="clickMe" type="button" value="clickme" onclick="getBetResult();" />
-
-    <script>
-        function getBetResult() {
-            var betAmount = document.getElementById("betAmt");
-            var walletAddress = document.getElementById("walletAddress");
-        }
-    </script>
-
+    <input onClick="this.select();" id="betAmt" value="Bet Amount (ETH)" style="width:20%">
+    <input onClick="this.select();" id="walletAddress" value="Wallet Address" style="width:60%">
 </body>
+
+<div class="centre">
+    <button class="btn"> Flip Coin </button>
+</div>
+
+<script src="app.js"></script>
+
 </html>

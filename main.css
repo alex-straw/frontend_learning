@@ -1,0 +1,33 @@
+.large_text {
+    font-family: monospace;
+    font-size: 150px
+}
+
+.regular_text {
+    font-family: monospace;
+    font-size: 25px;
+}
+
+input {
+    font-family: monospace;
+    font-size: 25px;
+}
+
+.light-theme {
+    color: #000000;
+    background: #a5c1f1;
+  }
+
+.btn {
+    height: 200%;
+    width: 25%;
+    font-family: monospace;
+    font-size: 25px;
+  }
+
+.centre {
+    text-align: center;
+    margin: auto;
+    width: 75%;
+    padding: 10px;
+  }
