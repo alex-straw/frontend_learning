@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+    <h3>Coinflip</h3>
+    <p>This requires the Chrome MetaMask extension.</p>
+
+    <table>
+        <tr>
+            <td>
+                <input id="betAmt" value="Bet Amount (ETH)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="walletAddress" value="Wallet Address">
+            </td>
+        </tr>
+    </table>
+
+    <input id="clickMe" type="button" value="clickme" onclick="getBetResult();" />
+
+    <script>
+        function getBetResult() {
+            var betAmount = document.getElementById("betAmt");
+            var walletAddress = document.getElementById("walletAddress");
+        }
+    </script>
+
+</body>
+</html>
