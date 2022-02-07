@@ -11,12 +11,19 @@
 <h3 class="large_text"> Coinflip</h3>
 
 <body class="light-theme centre regular_text">
-    <p>This requires the Chrome MetaMask extension.</p>
-    <input onClick="this.select();" id="betAmt" value="Bet Size (Ether)" style="width:20%">
-    <input onClick="this.select();" id="walletAddress" value="Wallet Address" style="width:60%">
+    <table> 
+        <tr>
+            <p> Bet Size (Ether) </p>
+            <input type="number" onClick="this.select();" id="betAmt" value="Bet Size (Ether)" style="width:20%" min="0" step="0.05" max="2">
+        </tr>
+        <tr>
+            <p> Wallet Address (0xF...) </p>
+            <input onClick="this.select();" id="walletAddress" value="Wallet Address" style="width:60%"> 
+        </tr>
+    </table>
 </body>
 
-<div class="centre">
+<div class="centre add-spacing">
     <button class="btn"> Flip Coin </button>
 </div>
 
